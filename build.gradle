@@ -17,6 +17,8 @@ allprojects {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
+        // Parse SDk back4app
+        maven { url "https://jitpack.io" }
     }
 }
 
