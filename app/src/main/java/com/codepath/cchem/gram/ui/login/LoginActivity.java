@@ -52,6 +52,7 @@ public class LoginActivity extends Activity {
                 password = etPassword.getText().toString();
                 email = etEmail.getText().toString();
                 signUp(username, password, email);
+                loginUser(username, password);
             }
         });
 
