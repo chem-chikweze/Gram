@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--When Button is in pressed state -->
+    <item android:state_pressed="true" android:drawable="@drawable/login_button_enhanced" />
+
+    <!--When Button is in selected state -->
+    <item android:state_selected="true" android:drawable="@drawable/login_button_enhanced" />
+
+    <!--Default Background Color -->
+    <item android:drawable="@drawable/login_button_normal" />
+</selector>
