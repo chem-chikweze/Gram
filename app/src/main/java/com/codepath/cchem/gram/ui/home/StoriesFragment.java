@@ -30,7 +30,7 @@ import java.util.List;
 
 public class StoriesFragment extends Fragment {
     private String TAG = "StoriesFragment";
-    private RecyclerView rvPosts;
+    public static RecyclerView rvPosts;
     private PostsAdapter adapter;
     private List<Post> allPosts;
     private SwipeRefreshLayout swipeContainer;

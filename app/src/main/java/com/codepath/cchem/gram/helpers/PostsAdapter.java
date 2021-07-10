@@ -59,25 +59,24 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull  ViewHolder holder, int position) {
+        Post post = posts.get(position);
+        holder.bind(post);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goTo(v);
+                goTo(post);
 //                Intent i = new Intent(context, HomeActivity.class);
-//                i.putExtra("DetailsFragment",1);
+//                i.putExtra("Post Object",post);
 //                context.startActivity(i);
 //                showEditDialog(v);
                 Toast.makeText(context, "Recycle Click" + position, Toast.LENGTH_SHORT).show();
             }
         });
-
-
-        Post post = posts.get(position);
-        holder.bind(post);
     }
-    public void goTo(View v) {
-        Intent intent = new Intent(context, DetailsActivity.class );
-        context.startActivity(intent);
+    public void goTo(Post post) {
+        Intent i = new Intent(context, DetailsActivity.class );
+        i.putExtra("Post Object",post);
+        context.startActivity(i);
     }
     @Override
     public int getItemCount() {
@@ -95,13 +94,10 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
             ivImage = itemView.findViewById(R.id.ivImage);
             tvDescription = itemView.findViewById(R.id.tvDescription);
 
-            tvDescription.setOnClickListener(new View.OnClickListener() {
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    navController = Navigation.findNavController(itemView);
-                    if(navController !=  null) {
-                        navController.navigate(R.id.action_stories_fragment_to_detailsFragment);
-                    }
+
                 }
             });
         }
