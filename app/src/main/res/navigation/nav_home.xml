@@ -9,6 +9,9 @@
         android:id="@+id/stories_fragment"
         android:name="com.codepath.cchem.gram.ui.home.StoriesFragment"
         tools:layout="@layout/fragment_stories" >
+        <action
+            android:id="@+id/action_stories_fragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
     </fragment>
 
     <fragment
@@ -30,6 +33,15 @@
         android:id="@+id/settings_fragment"
         android:name="com.codepath.cchem.gram.ui.settings.SettingsFragment"
         tools:layout="@layout/fragment_settings" >
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.codepath.cchem.gram.ui.home.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_stories_fragment"
+            app:destination="@id/stories_fragment" />
     </fragment>
 
 </navigation>
