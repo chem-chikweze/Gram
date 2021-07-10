@@ -8,25 +8,25 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] User sees app icon in home screen.
-- [ ] User can sign up to create a new account using Parse authentication
-- [ ] User can log in to his or her account
-- [ ] The current signed in user is persisted across app restarts
-- [ ] User can log out of his or her account
-- [ ] User can take a photo, add a caption, and post it to "Instagram"
-- [ ] User can view the last 20 posts submitted to "Instagram"
-- [ ] User can pull to refresh the last 20 posts submitted to "Instagram"
-- [ ] User can tap a post to go to a Post Details activity, which includes timestamp and caption.
+- [*] User sees app icon in home screen.
+- [*] User can sign up to create a new account using Parse authentication
+- [*] User can log in to his or her account
+- [*] The current signed in user is persisted across app restarts
+- [*] User can log out of his or her account
+- [*] User can take a photo, add a caption, and post it to "Instagram"
+- [*] User can view the last 20 posts submitted to "Instagram"
+- [*] User can pull to refresh the last 20 posts submitted to "Instagram"
+- [] User can tap a post to go to a Post Details activity, which includes timestamp and caption.
 - [ ] User sees app icon in home screen
 
 The following **stretch** features are implemented:
 
-- [ ] Style the login page to look like the real Instagram login page.
-- [ ] Style the feed to look like the real Instagram feed.
+- [*] Style the login page to look like the real Instagram login page.
+- [*] Style the feed to look like the real Instagram feed.
 - [ ] User can load more posts once he or she reaches the bottom of the feed using endless scrolling.
-- [ ] User should switch between different tabs using fragments and a Bottom Navigation View.
-  - [ ] Feed Tab (to view all posts from all users)
-  - [ ] Capture Tab (to make a new post using the Camera and Photo Gallery)
+- [*] User should switch between different tabs using fragments and a Bottom Navigation View.
+  - [*] Feed Tab (to view all posts from all users)
+  - [*] Capture Tab (to make a new post using the Camera and Photo Gallery)
   - [ ] Profile Tab (to view only the current user's posts, in a grid)
 - [ ] Show the username and creation time for each post
 - User Profiles:
@@ -44,14 +44,14 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Navigation Graph
+2. Fragments
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Kap](https://getkap.co/).
 
@@ -65,6 +65,8 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+I tried building a single Activity application using a navigation graph to help me navigate but then it was troublesome because I tried putting the bottom navigation on a fragment. It was hard to implement so I ended up using three Activities. One for the main activity which connected Login fragment and Home Activity. The Home Activity contained a bottom tab of four fragments. And on clicking items in the recycler views of posts, I was led to the Details Activity.
 
 ## License
 
