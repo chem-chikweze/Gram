@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/stories_fragment"
+        android:title="@string/stories_tab_title"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/camera_fragment"
+        android:title="@string/camera_tab_title"
+        android:icon="@drawable/ic_camera"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/profile_fragment"
+        android:title="@string/profile_tab_title"
+        android:icon="@drawable/ic_profile"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/settings_fragment"
+        android:title="@string/settings_tab_title"
+        android:icon="@drawable/ic_settings"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+</menu>

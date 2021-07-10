@@ -77,20 +77,16 @@ public class LoginActivity extends Activity {
 
     private void loginUser(String username, String password) {
         Log.i(TAG, "Attempting to login "+ username);
-
         ParseUser.logInInBackground(username, password, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
                 if(e != null){
                     Log.e(TAG, "Issue with login", e);
                 }
-
                 goMainActivity();
                 Toast.makeText(LoginActivity.this, "Login Success!", Toast.LENGTH_SHORT).show();
             }
         });
-
-
     }
 
     private void goMainActivity() {

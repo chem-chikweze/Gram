@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/camera_fragment">
+
+    <fragment
+        android:id="@+id/stories_fragment"
+        android:name="com.codepath.cchem.gram.ui.home.StoriesFragment"
+        tools:layout="@layout/fragment_stories" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="com.codepath.cchem.gram.ui.camera.CameraFragment"
+        tools:layout="@layout/fragment_create_post" >
+        <action
+            android:id="@+id/action_camera_fragment_to_stories_fragment"
+            app:destination="@id/stories_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.codepath.cchem.gram.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.codepath.cchem.gram.ui.settings.SettingsFragment"
+        tools:layout="@layout/fragment_settings" >
+    </fragment>
+
+</navigation>

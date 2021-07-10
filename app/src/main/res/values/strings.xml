@@ -15,4 +15,11 @@
     <string name="back4app_app_id">5csP7Q5YjoCBGlY57UWYorNJjI7UEbEmo8WYHjAY</string>
     <string name="back4app_client_key">c8o0dpD2eXsU1rPlcRSn8d3vnfaIDXUHxRUk9Jqb</string>
     <string name="prompt_username">Username</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">damn</string>
+    <string name="stories_tab_title">Home</string>
+    <string name="profile_tab_title">Profile</string>
+    <string name="settings_tab_title">Settings</string>
+    <string name="log_out">Log out</string>
+    <string name="camera_tab_title">Camera</string>
 </resources>
